@@ -2,7 +2,7 @@ import axios from "axios";
 import Transfer from "../models/Transfer.js";
 
 const getExchangeRates = async (base) => {
-  const response = await axios.get(`https://open.er-api.com/v6/latest/${base}`);
+  const response = await axios.get(`https://v6.exchangerate-api.com/v6/3a5971ca6655c048533a027b/latest/${base}`);
   return response.data.rates;
 };
 
